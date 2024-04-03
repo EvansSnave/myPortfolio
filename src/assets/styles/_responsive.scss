@@ -1,17 +1,23 @@
+@mixin large-down {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin medium-down {
-  @media (max-width: 1240px) {
+  @media (max-width: 900px) {
     @content;
   }
 }
 
 @mixin small-down {
-  @media (max-width: 930px) {
+  @media (max-width: 600px) {
     @content;
   }
 }
 
 @mixin extra-small-down {
-  @media (max-width: 670px) {
+  @media (max-width: 320px) {
     @content;
   }
 }
