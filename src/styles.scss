@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/fonts';
+@import './assets/styles/responsive';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 1vw;
+  font-family: 'Main','sans-serif';
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-family: 'Titles', 'sans-serif';
+  font-size: 3.5vw;
+}
+
+h2 {
+  font-family: 'SubTitles', 'sans-serif';
+  font-size: 1.3vw;
+}
+
+button:hover {
+  cursor: pointer;
+}
