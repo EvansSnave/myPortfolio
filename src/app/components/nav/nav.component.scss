@@ -1,5 +1,18 @@
 button {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  padding: 3vw 7vw 0 7vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+div {
+  display: flex;
+  gap: 2vw;
 }

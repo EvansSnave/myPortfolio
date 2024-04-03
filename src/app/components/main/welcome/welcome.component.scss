@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/colors';
+
+main {
+  display: flex;
+  height: 75vh;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  background-color: $second-color;
+  height: 100%;
+  justify-content: center;
+  padding: 10vh 0 0 15vw;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  background-color: $third-color;
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  right: 25vw;
+}
+
+.cont {
+  width: 60%;
+}
+
+.messages {
+  display: flex;
+}
