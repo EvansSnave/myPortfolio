@@ -29,14 +29,20 @@ main {
   width: 20vw;
   height: 20vw;
   right: 25vw;
+  z-index: 100;
 }
 
 .cont {
   width: 60%;
+  margin-top: 5vw;
 }
 
 .messages {
   display: flex;
+  gap: 3vw;
+  &>p {
+    width: 50%;
+  }
 }
 
 .square {
@@ -50,9 +56,46 @@ main {
 
 .stairs {
   position: absolute;
-  max-width: 5vw;
-  width: 5vw;
-  height: 4vw;
+  width: 8vw;
+  height: 8vw;
   top: 15vw;
   right: 15vw;
+}
+
+.stairs-2 {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top: 15vw;
+  right: 45vw;
+  transform: rotate(45deg);
+}
+
+.stairs-3 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 25vw;
+  right: 43vw;
+  transform: rotate(100deg);
+}
+
+.points {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  top: 25vw;
+  right: 20vw;
+}
+
+.points-2 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 7vw;
+  right: 43vw;
+}
+
+.titles {
+  margin-bottom: 5vw;
 }
