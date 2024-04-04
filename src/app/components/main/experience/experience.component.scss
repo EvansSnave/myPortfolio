@@ -1,0 +1,19 @@
+@import '../../../../assets/styles/colors';
+
+button {
+  position: relative;
+  width: 40vw;
+  height: 25vw;
+}
+
+section {
+  background-color: $second-color;
+  padding: 10vw 15vw;
+  display: flex;
+  gap: 7vw;
+  height: 100vh;
+}
+
+div {
+  width: 30vw;
+}

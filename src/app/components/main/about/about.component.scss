@@ -1,0 +1,20 @@
+section {
+  height: 100vh;
+  padding: 0 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
+div {
+  width: 35vw;
+}
+
+.up {
+  margin-bottom: 10vw;
+}
+
+.down {
+  margin-top: 10vw;
+}
