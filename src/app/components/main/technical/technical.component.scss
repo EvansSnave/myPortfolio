@@ -25,6 +25,11 @@ button {
   padding: 1vw;
   border: 1px solid $forth-color;
   width: 50%;
+  transition: 0.2s ease-in all;
+  &:hover {
+    background-color: $forth-color;
+    color: $first-color;
+  }
 }
 
 h2 {
