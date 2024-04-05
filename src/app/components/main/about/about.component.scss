@@ -15,6 +15,40 @@ div {
   margin-bottom: 10vw;
 }
 
+.tech {
+  animation: fade-in 1s ease-out forwards;
+  opacity: 0;
+  animation-timeline: view(50% 10%);
+  bottom: 5vw;
+  position: relative;
+}
+
+.soft {
+  animation: fade-in 1s ease-out forwards;
+  opacity: 0;
+  animation-timeline: view(50% 20%);
+  bottom: 5vw;
+  position: relative;
+}
+
+p {
+  position: relative;
+  animation: fade-in 0.5s ease-out forwards;
+  bottom: 5vw;
+}
+
 .down {
   margin-top: 10vw;
+  position: relative;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;   
+    transform: translateY(5vw);
+  }
 }
