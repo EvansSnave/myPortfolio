@@ -1,7 +1,19 @@
 <main>
   <h1>My projects</h1>
   <h2>Selected work</h2>
-  <section>
-    
-  </section>
+  <ul>
+    @for (project of projects; track $index) {
+      <li>
+        <a (click)="toProject(project.id)">
+          <button type="button">
+            <img [ngSrc]="project.images[0] + './'" fill alt="Project shortcut">
+          </button>
+          <div>
+            <p>{{project.title}}</p>
+            <p>{{project.activeLink}}</p>
+          </div>
+        </a>
+      </li>
+    }
+  </ul>
 </main>

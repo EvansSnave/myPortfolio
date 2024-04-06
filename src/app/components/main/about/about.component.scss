@@ -18,7 +18,7 @@ div {
 .tech {
   animation: fade-in 1s ease-out forwards;
   opacity: 0;
-  animation-timeline: view(50% 10%);
+  animation-timeline: view(45% 40%);
   bottom: 5vw;
   position: relative;
 }
@@ -26,7 +26,7 @@ div {
 .soft {
   animation: fade-in 1s ease-out forwards;
   opacity: 0;
-  animation-timeline: view(50% 20%);
+  animation-timeline: view(50% 40%);
   bottom: 5vw;
   position: relative;
 }
@@ -34,12 +34,13 @@ div {
 p {
   position: relative;
   animation: fade-in 0.5s ease-out forwards;
+  animation-timeline: view(65% 10%);
   bottom: 5vw;
+  opacity: 0;
 }
 
 .down {
   margin-top: 10vw;
-  position: relative;
 }
 
 @keyframes fade-in {
