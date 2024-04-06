@@ -3,4 +3,30 @@
 footer {
   height: 50vh;
   background-color: $third-color;
+  padding: 5vh 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &>* {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+button {
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+}
+
+ul {
+  gap: 3vw;
+  border-top: solid 1px $forth-color;
+}
+
+div {
+  gap: 10vw;
 }
