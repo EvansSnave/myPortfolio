@@ -1,4 +1,20 @@
 <section>
-  <p>id: {{project.id}}</p>
-  <p>Title: {{project.title}}</p>
+  <h2>{{project.title}}</h2>
+  <div #slider class="slider">
+    <button type="button" #prev class="prev">Prev</button>
+    <ul>
+      @for (image of project.images; track $index) {
+        <li #slide><button type="button" class="image">
+          <img alt="Project showcase" [ngSrc]="image" fill>
+        </button></li>
+      }
+    </ul>
+    <button type="button" #next class="next">Next</button>
+  </div>
+  <article>
+    {{project.description}}
+    <div>To see this project:<br>{{project.instructions}}</div>
+    <p>GitHub repository <a [href]="project.repositoryLink">here</a></p>
+    <p>Active link <a [href]="project.activeLink">here</a></p>
+  </article>
 </section>

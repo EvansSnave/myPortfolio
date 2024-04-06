@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChildren, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Projects } from './projects';
 import { PROJECTS } from './projects.data';
 import { NgOptimizedImage } from '@angular/common';
@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
 
   projects: Projects[];
 
-  constructor(private renderer: Renderer2, private ref: ElementRef, private router: Router) { 
+  constructor(private router: Router) { 
     this.projects = PROJECTS;
   }
 

@@ -128,12 +128,14 @@ h2 {
 .messages > p {
   animation: fade-in 0.8s forwards ease-in 0.5s;
   position: relative;
+  opacity: 0;
   top: 5vw;
 }
 
 h2 {
   animation: fade-in 0.5s forwards ease-in 0.5s;
   position: relative;
+  opacity: 0;
   top: 5vw;
 }
 

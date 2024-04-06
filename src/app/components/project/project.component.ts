@@ -1,26 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren, ViewChild} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PROJECTS } from '../projects/projects.data';
 import { Projects } from '../projects/projects';
+import { NgOptimizedImage } from '@angular/common';
+import { getWindow } from 'ssr-window';
 
 @Component({
   selector: 'app-project',
   standalone: true,
+  imports: [NgOptimizedImage],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit, AfterViewInit {
+  @ViewChildren('slide') slides: QueryList<ElementRef<HTMLLIElement>>;
+  @ViewChild('slider') slider: ElementRef<HTMLUListElement>;
+  @ViewChild('prev') prevBtn: ElementRef<HTMLButtonElement>;
+  @ViewChild('next') nextBtn: ElementRef<HTMLButtonElement>;
   id: number;
   projects: Projects[];
   private routeSub: Subscription;
   project: Projects;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private renderer: Renderer2, private ref: ElementRef) {
     this.id = 0;
     this.routeSub = this.route.params.subscribe();
     this.projects = PROJECTS;
     this.project = PROJECTS[0];
+    this.slides = this.ref.nativeElement;
+    this.slider = this.ref.nativeElement;
+    this.prevBtn = this.ref.nativeElement;
+    this.nextBtn = this.ref.nativeElement;
    }
 
   ngOnInit(): void {
@@ -28,6 +39,16 @@ export class ProjectComponent implements OnInit {
       this.id = params['id'];
     })
     this.project = this.projects.find((pro) => pro.id == this.id) || this.projects[0];
+  }
+
+  ngAfterViewInit(): void {
+    this.renderer.listen(this.prevBtn.nativeElement, 'click', () => {
+      const slideWidth = ((getWindow().innerWidth)*30)/100;
+      const slide = this.slides.get(0)?.nativeElement;
+      if (slide) {
+        slide.scrollLeft -= slideWidth;
+      }
+    });
   }
 
 }
