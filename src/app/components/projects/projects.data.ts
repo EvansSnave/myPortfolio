@@ -11,7 +11,7 @@ export const PROJECTS: Projects[] = [
     description: '',
     repositoryLink: '',
     instructions: '',
-    activeLink: ''
+    activeLink: 'qqqsadasdaddaaasadad'
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ export const PROJECTS: Projects[] = [
     description: '',
     repositoryLink: '',
     instructions: '',
-    activeLink: ''
+    activeLink: 'asasdfsdfdfgdgdgdgdg'
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const PROJECTS: Projects[] = [
     description: '',
     repositoryLink: '',
     instructions: '',
-    activeLink: ''
+    activeLink: 'assasasaasadsfdfdgdg'
   },
   {
     id: 3,
@@ -47,6 +47,6 @@ export const PROJECTS: Projects[] = [
     description: '',
     repositoryLink: '',
     instructions: '',
-    activeLink: ''
+    activeLink: 'assaaddfdgfhfjhjjhkjll'
   },
 ];
