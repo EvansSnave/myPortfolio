@@ -1,19 +1,19 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren, ViewChild} from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren, ViewChild} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PROJECTS } from '../projects/projects.data';
 import { Projects } from '../projects/projects';
 import { NgOptimizedImage } from '@angular/common';
-import { getWindow } from 'ssr-window';
+import { CarouselModule } from 'ngx-carousel-ease';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, CarouselModule],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent implements OnInit, AfterViewInit {
+export class ProjectComponent implements OnInit {
   @ViewChildren('slide') slides: QueryList<ElementRef<HTMLLIElement>>;
   @ViewChild('slider') slider: ElementRef<HTMLUListElement>;
   @ViewChild('prev') prevBtn: ElementRef<HTMLButtonElement>;
@@ -39,16 +39,6 @@ export class ProjectComponent implements OnInit, AfterViewInit {
       this.id = params['id'];
     })
     this.project = this.projects.find((pro) => pro.id == this.id) || this.projects[0];
-  }
-
-  ngAfterViewInit(): void {
-    this.renderer.listen(this.prevBtn.nativeElement, 'click', () => {
-      const slideWidth = ((getWindow().innerWidth)*30)/100;
-      const slide = this.slides.get(0)?.nativeElement;
-      if (slide) {
-        slide.scrollLeft -= slideWidth;
-      }
-    });
   }
 
 }
