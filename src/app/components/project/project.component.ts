@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PROJECTS } from '../projects/projects.data';
@@ -11,27 +11,20 @@ import { CarouselModule } from 'ngx-carousel-ease';
   standalone: true,
   imports: [NgOptimizedImage, CarouselModule],
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  styleUrls: ['./project.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectComponent implements OnInit {
-  @ViewChildren('slide') slides: QueryList<ElementRef<HTMLLIElement>>;
-  @ViewChild('slider') slider: ElementRef<HTMLUListElement>;
-  @ViewChild('prev') prevBtn: ElementRef<HTMLButtonElement>;
-  @ViewChild('next') nextBtn: ElementRef<HTMLButtonElement>;
   id: number;
   projects: Projects[];
   private routeSub: Subscription;
   project: Projects;
 
-  constructor(private route: ActivatedRoute, private renderer: Renderer2, private ref: ElementRef) {
+  constructor(private route: ActivatedRoute) {
     this.id = 0;
     this.routeSub = this.route.params.subscribe();
     this.projects = PROJECTS;
     this.project = PROJECTS[0];
-    this.slides = this.ref.nativeElement;
-    this.slider = this.ref.nativeElement;
-    this.prevBtn = this.ref.nativeElement;
-    this.nextBtn = this.ref.nativeElement;
    }
 
   ngOnInit(): void {

@@ -82,7 +82,12 @@ export const PROJECTS: Projects[] = [
     images: [
       './', 
       './',
-      './'
+      './',
+      './',
+      './',
+      './',
+      './',
+      './',
     ],
     description: `
       asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf

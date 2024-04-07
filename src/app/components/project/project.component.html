@@ -1,15 +1,25 @@
-<!-- <section>
+<section>
   <h2>{{project.title}}</h2>
-  <div #slider class="slider">
-    <button type="button" #prev class="prev">Prev</button>
-    <ul>
+  <div class="carousel">
+    <carousel 
+      [infinite]="true" 
+      [autoPlay]="true" 
+      [autoPlayAtStart]="true"
+      [displayAutoPlayControls]="false"
+      [slideToShow]="1"
+      [slideToScroll]="1"
+      [autoPlayInterval]="5000"
+      [counter]="false"
+      [gapBetweenSlides]="0"
+      [animationTimingMs]="500"
+      [dots]="false"
+    >
       @for (image of project.images; track $index) {
-        <li #slide><button type="button" class="image">
+        <li class="carousel-slide"><button type="button" class="image">
           <img alt="Project showcase" [ngSrc]="image" fill>
         </button></li>
       }
-    </ul>
-    <button type="button" #next class="next">Next</button>
+    </carousel>
   </div>
   <article>
     {{project.description}}
@@ -17,15 +27,4 @@
     <p>GitHub repository <a [href]="project.repositoryLink">here</a></p>
     <p>Active link <a [href]="project.activeLink">here</a></p>
   </article>
-</section> -->
-
-<carousel class="carousel">
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-  <div class="carousel-slide">...</div>
-</carousel>
+</section>
