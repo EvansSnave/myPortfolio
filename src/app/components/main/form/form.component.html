@@ -1,15 +1,23 @@
 <section>
-  <div>
-    <h1>Some title</h1>
-    <h2>Some subtitle</h2>
+  <div class="text">
+    <h1>Let's work together!</h1>
+    <h2>Send me a message and we'll discuss it pretty soon!</h2>
   </div>
   <form 
       [formGroup]="form" 
       (ngSubmit)="submitForm()" 
     >
-    <input type="string" placeholder="Name" formControlName="name">
-    <input type="email" placeholder="Email" formControlName="email">
-    <input type="text" placeholder="Message" formControlName="message">
-    <button type="submit" [disabled]="!form.valid">SEND</button>
+    <div class="inputs">
+      <label>Your name
+        <input type="string" placeholder="Enter your name" formControlName="name">
+      </label>
+      <label>Your email
+        <input type="email" placeholder="Enter your email" formControlName="email">
+      </label>
+    </div>
+    <label>Your message
+      <textarea placeholder="Hi Kevin! I'm looking for someone who candesign and implement a user-friendly graphical interface. I would love to discuss the details with you. Looking forward to hear from you!" formControlName="message"></textarea>
+    </label>
+    <button type="submit" [disabled]="!form.valid">SEND >>></button>
   </form>
 </section>

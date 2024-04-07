@@ -36,6 +36,7 @@ export class FormComponent implements OnInit {
         body: JSON.stringify(this.form.value),
       })
         .then((res) => res.json())
+      this.form.reset();
     }
   }
 

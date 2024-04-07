@@ -1,6 +1,72 @@
+@import '../../../../assets/styles/colors';
+@import '../../../../assets/styles/fonts';
+
 section {
   padding: 10vw 15vw;
   display: flex;
-  gap: 10vw;
+  gap: 5vw;
   height: 100vh;
+}
+
+form {
+  width: 70%;
+}
+
+.text {
+  width: 30%;
+}
+
+button {
+  padding: 1vw 1.5vw;
+  border: 1px $forth-color solid;
+  &:disabled {
+    background-color: $second-color;
+    color: $third-color;
+  }
+}
+
+input {
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+input, textarea {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  min-height: 3vw;
+  border-bottom: 1px solid $third-color;
+  transition: all 1s;
+  &:focus {
+    border-bottom-color: $forth-color;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'sans-serif', 'SubTitles';
+  font-size: 1.3vw;
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: 2vw;
+  gap: 2vw;
 }
