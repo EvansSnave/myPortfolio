@@ -5,7 +5,7 @@ section {
   padding: 10vw 15vw;
   display: flex;
   gap: 5vw;
-  height: 100vh;
+  height: 50vw;
 }
 
 form {
@@ -22,6 +22,10 @@ button {
   &:disabled {
     background-color: $second-color;
     color: $third-color;
+  }
+  &:enabled:hover {
+    background-color: $forth-color;
+    color: $second-color;
   }
 }
 

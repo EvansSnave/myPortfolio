@@ -5,11 +5,12 @@ import { PROJECTS } from '../projects/projects.data';
 import { Projects } from '../projects/projects';
 import { NgOptimizedImage } from '@angular/common';
 import { CarouselModule } from 'ngx-carousel-ease';
+import { FormComponent } from '../main/form/form.component';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgOptimizedImage, CarouselModule],
+  imports: [NgOptimizedImage, CarouselModule, FormComponent],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss'],
   encapsulation: ViewEncapsulation.None,
