@@ -19,6 +19,6 @@ export class TechnicalComponent implements OnInit {
   }
 
   scrollToFooter():void {
-    window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: 'smooth'});
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' });
   }
 }

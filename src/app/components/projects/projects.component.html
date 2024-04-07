@@ -4,7 +4,7 @@
   <ul>
     @for (project of projects; track $index) {
       <li [ngStyle]="{ order: projects.length - $index}">
-        <a (click)="toProject(project.id)">
+        <a (click)="toProject($index)">
           <button type="button">
             <img [ngSrc]="project.shortcut" fill alt="Project shortcut">
           </button>

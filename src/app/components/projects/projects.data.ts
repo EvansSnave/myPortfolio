@@ -2,9 +2,8 @@ import { Projects } from "./projects";
 
 export const PROJECTS: Projects[] = [
   {
-    id: 0,
     shortcut: '../../../assets/images/projects/books/12.png',
-    title: 'Books: Capstone project frontend',
+    title: 'Boooks!',
     images: [
       '../../../assets/images/projects/books/0.png', 
       '../../../assets/images/projects/books/1.png', 

@@ -32,7 +32,7 @@ export class ProjectComponent implements OnInit {
     this.routeSub = this.route.params.subscribe(params => {
       this.id = params['id'];
     })
-    this.project = this.projects.find((pro) => pro.id == this.id) || this.projects[0];
+    this.project = this.projects[this.id] || this.projects[0];
   }
 
 }
