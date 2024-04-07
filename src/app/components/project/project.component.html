@@ -22,10 +22,16 @@
     </carousel>
   </div>
   <article>
-    {{project.description}}
-    <div>To see this project:<br>{{project.instructions}}</div>
-    <p>GitHub repository <a [href]="project.repositoryLink">here</a></p>
-    <p>Active link <a [href]="project.activeLink">here</a></p>
+    <div [innerHTML]="project.description" class="description"></div>
+    <div [innerHTML]="project.instructions"></div>
+    <p>GitHub repository <a [href]="project.repositoryLink" target="_blank">here</a></p>
+    <p>Active link 
+      @if (project.activeLink != '') {
+        <a [href]="project.activeLink" target="_blank">here</a>
+      } @else {
+        coming soon!
+      }
+    </p>
   </article>
 </main>
 <app-form></app-form>

@@ -3,170 +3,31 @@ import { Projects } from "./projects";
 export const PROJECTS: Projects[] = [
   {
     id: 0,
-    title: 'my project',
+    title: 'Books: Capstone project frontend',
     images: [
       './', 
       './'
     ],
     description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      This is the frontend from my capstone project at Microverse. I worked with four developers from
+      other countries remotely. This is a full-stack website where users can create an account and login/logout 
+      easily. Implements responsive design and React best practices. Users can add and delete books seamlessly and 
+      these changes will be displayed for all users. It counts with token authentication for account security and 
+      a friendly design. I particularly helped creating the style for both desktop and mobile devices. I also 
+      designed by myself the authentication/authorization system and the form validations. After we finished the 
+      project we had to present it to a lead industry developer and explain what we did and how.<br><br>
+      This project taught me a lot about collaboration and respect. I developed leadership skills and learned how to 
+      work under pressure in a team. I learned from my team mates and also taught them technical skills. Overall, it was a 
+      project where I was able to put to use all I have learned.
     `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'qqqsadasdaddaaasadad'
-  },
-  {
-    id: 1,
-    title: 'my project 1',
-    images: [
-      './', 
-      './'
-    ],
-    description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+    repositoryLink: 'https://github.com/kiboma2021/capstone-project-front-end',
+    instructions: `
+      To see this project:<br>
+      1) In a command line go to your desire folder location.<br>
+      2) Type the command: git clone https://github.com/kiboma2021/capstone-project-front-end<br>
+      3) Go to the folder in the command line and run npm install<br>
+      4) Run npm start
     `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'asasdfsdfdfgdgdgdgdg'
-  },
-  {
-    id: 2,
-    title: 'my project 2',
-    images: [
-      './', 
-      './'
-    ],
-    description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-    `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'assasasaasadsfdfdgdg'
-  },
-  {
-    id: 3,
-    title: 'my project 3',
-    images: [
-      './', 
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-    ],
-    description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-    `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'assaaddfdgfhfjhjjhkjll'
-  },
-  {
-    id: 4,
-    title: 'my project 4',
-    images: [
-      './', 
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-    ],
-    description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-    `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'assaaddfdgfhfjhjjhkjll'
-  },
-  {
-    id: 5,
-    title: 'my project 5',
-    images: [
-      './', 
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-      './',
-    ],
-    description: `
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
-      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
-    `,
-    repositoryLink: '',
-    instructions: '',
-    activeLink: 'assaaddfdgfhfjhjjhkjll'
-  },
+    activeLink: ''
+  }
 ];
