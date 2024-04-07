@@ -1,5 +1,6 @@
 export interface Projects {
   id: number,
+  shortcut: string,
   title: string,
   images: Array<string>,
   description: string,

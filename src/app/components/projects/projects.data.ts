@@ -3,10 +3,21 @@ import { Projects } from "./projects";
 export const PROJECTS: Projects[] = [
   {
     id: 0,
+    shortcut: '../../../assets/images/projects/books/12.png',
     title: 'Books: Capstone project frontend',
     images: [
-      './', 
-      './'
+      '../../../assets/images/projects/books/0.png', 
+      '../../../assets/images/projects/books/1.png', 
+      '../../../assets/images/projects/books/2.png', 
+      '../../../assets/images/projects/books/3.png', 
+      '../../../assets/images/projects/books/4.png', 
+      '../../../assets/images/projects/books/5.png', 
+      '../../../assets/images/projects/books/6.png', 
+      '../../../assets/images/projects/books/7.png', 
+      '../../../assets/images/projects/books/8.png', 
+      '../../../assets/images/projects/books/9.png', 
+      '../../../assets/images/projects/books/10.png', 
+      '../../../assets/images/projects/books/11.png', 
     ],
     description: `
       This is the frontend from my capstone project at Microverse. I worked with four developers from

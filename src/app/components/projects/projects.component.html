@@ -6,7 +6,7 @@
       <li [ngStyle]="{ order: projects.length - $index}">
         <a (click)="toProject(project.id)">
           <button type="button">
-            <img [ngSrc]="project.images[0] + './'" fill alt="Project shortcut">
+            <img [ngSrc]="project.shortcut" fill alt="Project shortcut">
           </button>
           <div>
             <p>{{project.title}}</p>
