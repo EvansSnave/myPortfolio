@@ -3,7 +3,7 @@
   <p class="subtitle">Selected work</p>
   <ul>
     @for (project of projects; track $index) {
-      <li>
+      <li [ngStyle]="{ order: projects.length - $index}">
         <a (click)="toProject(project.id)">
           <button type="button">
             <img [ngSrc]="project.images[0] + './'" fill alt="Project shortcut">

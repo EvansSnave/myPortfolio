@@ -107,4 +107,66 @@ export const PROJECTS: Projects[] = [
     instructions: '',
     activeLink: 'assaaddfdgfhfjhjjhkjll'
   },
+  {
+    id: 4,
+    title: 'my project 4',
+    images: [
+      './', 
+      './',
+      './',
+      './',
+      './',
+      './',
+      './',
+      './',
+    ],
+    description: `
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+    `,
+    repositoryLink: '',
+    instructions: '',
+    activeLink: 'assaaddfdgfhfjhjjhkjll'
+  },
+  {
+    id: 5,
+    title: 'my project 5',
+    images: [
+      './', 
+      './',
+      './',
+      './',
+      './',
+      './',
+      './',
+      './',
+    ],
+    description: `
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+      asadfg ad gfhfghgjgh jgjhg j g jgjhgjgjgjgjgjgjdsffffd s wsergdf fssf sffd dfd fd sdf
+      saadhsakdfuhsfjnsdnf ldsj saild suad s dbnsif as dnsjkdmn sido ndilsdkad sdasasassaasa
+    `,
+    repositoryLink: '',
+    instructions: '',
+    activeLink: 'assaaddfdgfhfjhjjhkjll'
+  },
 ];
