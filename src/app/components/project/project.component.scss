@@ -1,7 +1,16 @@
+@import '../../../assets/styles/colors';
+
 .image {
   position: relative;
-  width: 30vw;
-  height: 30vw;
+  width: 40vw;
+  height: 40vw;
+}
+
+section {
+  padding: 8vw 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
@@ -9,7 +18,8 @@ h2 {
 }
 
 .carousel {
-  width: 30vw;
+  width: 40vw;
+  margin: 4vw;
 }
 
 .carousel-container {
@@ -18,4 +28,17 @@ h2 {
 
 .banner-container {
   margin: 0 !important;
+}
+
+li {
+  max-width: 1500px !important;
+}
+
+.prev, .next {
+  margin: 0 1vw !important;
+  background-color: $third-color !important;
+  box-shadow: none !important;
+  color: $forth-color !important;
+  border-radius: 30px !important;
+  padding: 5% 1vw !important;
 }

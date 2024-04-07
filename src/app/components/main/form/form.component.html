@@ -3,7 +3,10 @@
     <h1>Some title</h1>
     <h2>Some subtitle</h2>
   </div>
-  <form [formGroup]="form" (ngSubmit)="submitForm()">
+  <form 
+      [formGroup]="form" 
+      (ngSubmit)="submitForm()" 
+    >
     <input type="string" placeholder="Name" formControlName="name">
     <input type="email" placeholder="Email" formControlName="email">
     <input type="text" placeholder="Message" formControlName="message">

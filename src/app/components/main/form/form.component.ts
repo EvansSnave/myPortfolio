@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
+const URL = 'https://script.google.com/macros/s/AKfycbzrSrlFmPDMKtVAJpFlB5s0iCXClG5qXei5QkKP4A5oX6LDzZwgAb_Z79lxprC3Qmmr/exec';
+
 @Component({
   selector: 'app-form',
   standalone: true,
@@ -24,9 +26,16 @@ export class FormComponent implements OnInit {
     });
   }
 
-  submitForm(): void {
+  async submitForm(): Promise<void> {
     if (this.form?.valid) {
-      console.log('Form data: ', this.form.value);
+      fetch(URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(this.form.value),
+      })
+        .then((res) => res.json())
     }
   }
 
