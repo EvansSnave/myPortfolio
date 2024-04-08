@@ -1,9 +1,14 @@
 @import '../../../assets/styles/colors';
+@import '../../../assets/styles/responsive';
 
 button {
   position: relative;
   width: 18vw;
   height: 18vw;
+  @include tablet-size {
+    height: 22vw;
+    width: 22vw;
+  }
 }
 
 main {
@@ -11,6 +16,9 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include tablet-size {
+    padding: 15vw;
+  }
 }
 
 ul {

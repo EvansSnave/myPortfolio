@@ -1,9 +1,14 @@
 @import '../../../assets/styles/colors';
+@import '../../../assets/styles/responsive';
 
 .image {
   position: relative;
   width: 60vw;
   height: 32vw;
+  @include tablet-size {
+    width: 70vw;
+    height: 42vw;
+  }
 }
 
 main {
@@ -16,6 +21,10 @@ main {
 .carousel {
   width: 60vw;
   margin: 2vw 4vw;
+  @include tablet-size {
+    width: 70vw;
+    margin: 2vw 0;
+  }
 }
 
 .carousel-container {
@@ -47,5 +56,8 @@ article {
   padding: 0 10vw;
   &>* {
     color: grey;
+  }
+  @include tablet-size {
+    padding: 0;
   }
 }

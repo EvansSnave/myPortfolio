@@ -1,4 +1,5 @@
 @import '../../../assets/styles/colors';
+@import '../../../assets/styles/responsive';
 
 footer {
   height: 50vh;
@@ -20,6 +21,10 @@ button {
   position: relative;
   width: 3vw;
   height: 3vw;
+  @include tablet-size {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 
 ul {
