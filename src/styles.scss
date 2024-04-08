@@ -15,12 +15,15 @@
   background-color: transparent;
   font-size: 1vw;
   color: $forth-color;
-  // outline: 1px solid red;
+  outline: 1px solid red;
   font-family: 'Main','sans-serif';
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+  @include tablet-size {
+    font-size: 2.5vw;
   }
 }
 
@@ -32,11 +35,17 @@ h1 {
   font-family: 'Titles', 'sans-serif';
   font-size: 3vw;
   margin-bottom: 1vw;
+  @include tablet-size {
+    font-size: 5vw;
+  }
 }
 
 h2 {
   font-family: 'SubTitles', 'sans-serif';
   font-size: 1.3vw;
+  @include tablet-size {
+    font-size: 4vw;
+  }
 }
 
 html {
@@ -46,4 +55,7 @@ html {
 a {
   font-family: 'sans-serif', 'SubTitles';
   font-size: 1.2vw;
+  @include tablet-size {
+    font-size: 2.5vw;
+  }
 }

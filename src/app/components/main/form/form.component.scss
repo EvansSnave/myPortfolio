@@ -1,19 +1,30 @@
 @import '../../../../assets/styles/colors';
 @import '../../../../assets/styles/fonts';
+@import '../../../../assets/styles/responsive';
 
 section {
   padding: 10vw 15vw;
   display: flex;
   gap: 5vw;
   height: 50vw;
+  @include tablet-size {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 form {
   width: 70%;
+  @include tablet-size {
+    width: auto;
+  }
 }
 
 .text {
   width: 30%;
+  @include tablet-size {
+    width: auto;
+  }
 }
 
 button {
@@ -67,6 +78,9 @@ label {
   flex-direction: column;
   font-family: 'sans-serif', 'SubTitles';
   font-size: 1.3vw;
+  @include tablet-size {
+    font-size: 2.5vw;
+  }
 }
 
 .inputs {

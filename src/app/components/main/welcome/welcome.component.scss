@@ -1,9 +1,14 @@
 @import '../../../../assets/styles/colors';
+@import '../../../../assets/styles/responsive';
 
 main {
   display: flex;
-  height: 75vh;
+  height: 35vw;
   align-items: center;
+  @include tablet-size {
+    height: 80vw;
+    flex-direction: column-reverse;
+  }
 }
 
 .left {
@@ -13,7 +18,13 @@ main {
   background-color: $second-color;
   height: 100%;
   justify-content: center;
-  padding: 10vh 0 0 15vw;
+  padding: 8vw 0 0 15vw;
+  @include tablet-size {
+    width: 100%;
+    height: 45vw;
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .right {
@@ -22,6 +33,10 @@ main {
   width: 35vw;
   background-color: $third-color;
   height: 100%;
+  @include tablet-size {
+    width: 100%;
+    height: 35vw;
+  }
 }
 
 .image {
@@ -30,11 +45,20 @@ main {
   height: 20vw;
   right: 25vw;
   z-index: 100;
+  @include tablet-size {
+    left: 38vw;
+    top: 16vw;
+    height: 25vw;
+    width: 25vw;
+  }
 }
 
 .cont {
   width: 68%;
   margin-top: 5vw;
+  @include tablet-size {
+    width: 57%;
+  }
 }
 
 .messages {
@@ -52,6 +76,10 @@ main {
   right: 22vw;
   border: solid 1px $forth-color;
   top: 11vw;
+  @include tablet-size {
+    right: 32vw;
+    top: 24vw;
+  }
 }
 
 .stairs {
@@ -60,6 +88,12 @@ main {
   height: 8vw;
   top: 15vw;
   right: 15vw;
+  @include tablet-size {
+    right: 25vw;
+    top: 30vw;
+    width: 10vw;
+    height: 10vw;
+  }
 }
 
 .stairs-2 {
@@ -69,6 +103,12 @@ main {
   top: 15vw;
   right: 45vw;
   transform: rotate(45deg);
+  @include tablet-size {
+    left: 28vw;
+    top: 16vw;
+    width: 9vw;
+    height: 9vw;
+  }
 }
 
 .stairs-3 {
@@ -90,6 +130,12 @@ h2 {
   height: 7vw;
   top: 25vw;
   right: 20vw;
+  @include tablet-size {
+    width: 10vw;
+    height: 10vw;
+    top: 11vw;
+    right: 34vw;
+  }
 }
 
 .points-2 {
@@ -98,6 +144,12 @@ h2 {
   height: 5vw;
   top: 7vw;
   right: 43vw;
+  @include tablet-size {
+    width: 8vw;
+    height: 8vw;
+    top: 34vw;
+    right: 57vw;
+  }
 }
 
 .titles {

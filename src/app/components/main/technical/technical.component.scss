@@ -1,10 +1,14 @@
 @import '../../../../assets/styles/colors';
+@import '../../../../assets/styles/responsive';
 
 section {
   padding: 10vw 15vw;
   display: flex;
   gap: 10vw;
   height: 100vh;
+  @include tablet-size {
+    height: auto;
+  }
 }
 
 .cont {
@@ -18,6 +22,14 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: 5vw;
+    @include tablet-size {
+      width: auto;
+      padding: 5vw 10vw;
+      align-items: center;
+    }
+  }
+  @include tablet-size {
+    flex-direction: column;
   }
 }
 
@@ -38,4 +50,8 @@ p {
 
 .media {
   border-right: 1px solid $forth-color;
+  @include tablet-size {
+    border-right: none;
+    border-bottom: 1px solid $forth-color;
+  }
 }
