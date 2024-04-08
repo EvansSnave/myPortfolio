@@ -1,12 +1,15 @@
 @import '../../../assets/styles/responsive';
+@import '../../../assets/styles/colors';
 
-button {
+.icon {
   width: 5vw;
   height: 5vw;
   position: relative;
   @include tablet-size {
     width: 8vw;
     height: 8vw;
+    align-self: center;
+    margin-bottom: 3vw;
   }
 }
 
@@ -17,16 +20,49 @@ nav {
   justify-content: space-between;
   display: flex;
   z-index: 100;
+  transition: all 0.5s;
   @include tablet-size {
     padding: 4vw 2vw 0 4vw;
+    width: 30vw;
+    height: 100vh;
+    justify-content: start;
+    flex-direction: column;
+    background-color: $third-color;
+    border-right: 1px solid $first-color;
+    left: -30vw;
   }
 }
 
-div {
+.cont {
   display: flex;
   gap: 0.5vw;
+  @include tablet-size {
+    flex-direction: column;
+    gap: 3vw;
+  }
 }
 
 a {
   height: fit-content;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  z-index: 90;
+  backdrop-filter: blur(37px);
+  opacity: 0.3;
+  display: none;
+}
+
+.burger {
+  display: none;
+  width: 8vw;
+  height: 8vw;
+  position: fixed;
+  margin: 3vw;
+  @include tablet-size {
+    display: block;
+  }
 }
