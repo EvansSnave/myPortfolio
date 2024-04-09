@@ -1,4 +1,5 @@
 @import '../assets/styles/colors';
+@import '../assets/styles/responsive';
 
 .overlay {
   position: fixed;
@@ -19,6 +20,9 @@
   height: 100%;
   background-color: $third-color;
   align-self: flex-end;
+  @include phone-size {
+    width: 40%;
+  }
 }
 
 h2, button {
