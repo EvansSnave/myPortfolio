@@ -11,6 +11,9 @@ section {
     flex-direction: column;
     height: auto;
   }
+  @include phone-size {
+    padding: 30vw 15vw;
+  }
 }
 
 form {

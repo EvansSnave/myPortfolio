@@ -51,3 +51,9 @@ div {
     gap: 3vw;
   }
 }
+
+p {
+  @include phone-size {
+    font-size: 4vw;
+  }
+}
