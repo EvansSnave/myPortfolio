@@ -9,6 +9,10 @@ button {
     height: 22vw;
     width: 22vw;
   }
+  @include phone-size {
+    height: 65vw;
+    width: 65vw;
+  }
 }
 
 main {
@@ -19,12 +23,19 @@ main {
   @include tablet-size {
     padding: 15vw;
   }
+  @include phone-size {
+    min-height: 100vw;
+  }
 }
 
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
+  @include phone-size {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+  }
 }
 
 li:hover {
@@ -34,6 +45,9 @@ li:hover {
 
 .subtitle {
   margin-bottom: 2.5vw;
+  @include phone-size {
+    margin-bottom: 6vw;
+  }
 }
 
 h2 {
@@ -43,4 +57,7 @@ h2 {
 div {
   padding: 1vw;
   background-color: $second-color;
+  @include phone-size {
+   padding: 3vw;
+  }
 }

@@ -11,6 +11,10 @@
     align-self: center;
     margin-bottom: 3vw;
   }
+  @include phone-size {
+    width: 12vw;
+    height: 12vw;
+  }
 }
 
 nav {
@@ -31,6 +35,10 @@ nav {
     background-color: $third-color;
     border-right: 1px solid $first-color;
     left: -30vw;
+  }
+  @include phone-size {
+    width: 50vw;
+    left: -50vw;
   }
 }
 
@@ -62,6 +70,7 @@ a {
   width: 5vw;
   height: 5vw;
   position: fixed;
+  z-index: 80;
   margin: 3vw;
   @include tablet-size {
     display: block;

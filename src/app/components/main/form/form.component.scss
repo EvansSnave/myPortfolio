@@ -81,6 +81,9 @@ label {
   @include tablet-size {
     font-size: 2.5vw;
   }
+  @include phone-size {
+    font-size: 4vw;
+  }
 }
 
 .inputs {

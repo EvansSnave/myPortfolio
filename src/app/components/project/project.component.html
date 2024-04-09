@@ -12,6 +12,7 @@
       [counter]="false"
       [gapBetweenSlides]="0"
       [dots]="false"
+      [arrows]="size >= 550"
     >
       @for (image of project.images; track $index) {
         <li class="carousel-slide"><button type="button" class="image">

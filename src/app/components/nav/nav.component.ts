@@ -1,6 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit, Renderer2, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { getWindow } from 'ssr-window';
 
 @Component({
   selector: 'app-nav',
@@ -30,6 +31,9 @@ export class NavComponent implements OnInit {
     this.render.setStyle(nav, 'left', isNavOpen ? '-30vw' : '0px');
     this.render.setStyle(overlay, 'display', isNavOpen ? 'none' : 'block');
     this.render.setStyle(document.body, 'overflow', isNavOpen ? 'scroll' : 'hidden');
+    if (getWindow().innerWidth <= 550) {
+      this.render.setStyle(nav, 'left', isNavOpen ? '-50vw' : '0px');
+    }
   }
 
   @HostListener('window:resize', ['$event'])
@@ -39,6 +43,8 @@ export class NavComponent implements OnInit {
     if (width > 1024) {
       this.render.setStyle(this.nav.nativeElement, 'left', '0px');
       this.render.setStyle(this.burger.nativeElement, 'display', 'none');
+    } else if (width <= 550) {
+      this.render.setStyle(this.nav.nativeElement, 'left', '-50vw');
     } else {
       this.render.setStyle(this.nav.nativeElement, 'left', '-30vw');
       this.render.setStyle(this.overlay.nativeElement, 'display', 'none');

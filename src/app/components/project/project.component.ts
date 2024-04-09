@@ -6,6 +6,7 @@ import { Projects } from '../projects/projects';
 import { NgOptimizedImage } from '@angular/common';
 import { CarouselModule } from 'ngx-carousel-ease';
 import { FormComponent } from '../main/form/form.component';
+import { getWindow } from 'ssr-window';
 
 @Component({
   selector: 'app-project',
@@ -20,12 +21,14 @@ export class ProjectComponent implements OnInit {
   projects: Projects[];
   private routeSub: Subscription;
   project: Projects;
+  size: number;
 
   constructor(private route: ActivatedRoute) {
     this.id = 0;
     this.routeSub = this.route.params.subscribe();
     this.projects = PROJECTS;
     this.project = PROJECTS[0];
+    this.size = getWindow().innerWidth;
    }
 
   ngOnInit(): void {

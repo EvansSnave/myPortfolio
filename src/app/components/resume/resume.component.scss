@@ -1,13 +1,25 @@
+@import '../../../assets/styles/responsive';
+
 embed {
   width: 70vw;
   height: 100vw;
+  @include phone-size {
+    width: 100vw;
+    height: 150vw;
+  }
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1vw;
+  @include phone-size {
+    margin-bottom: 5vw;
+  }
 }
 
 main {
   padding: 10vw 15vw;
+  @include phone-size {
+    padding: 10vw 0;
+  }
 }
