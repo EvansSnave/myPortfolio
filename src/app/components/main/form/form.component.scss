@@ -87,4 +87,7 @@ label {
   display: flex;
   margin-bottom: 2vw;
   gap: 2vw;
+  @include phone-size {
+    flex-direction: column;
+  }
 }

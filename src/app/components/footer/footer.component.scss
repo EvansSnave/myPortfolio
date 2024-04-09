@@ -14,6 +14,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phone-size {
+      height: auto;
+    }
+  }
+  @include phone-size {
+    height: 55vw;
   }
 }
 
@@ -25,13 +31,23 @@ button {
     width: 6vw;
     height: 6vw;
   }
+  @include phone-size {
+    height: 9vw;
+    width: 9vw;
+  }
 }
 
 ul {
   gap: 3vw;
   border-top: solid 1px $forth-color;
+  @include phone-size {
+    padding-top: 3vw;
+  }
 }
 
 div {
   gap: 10vw;
+  @include phone-size {
+    gap: 3vw;
+  }
 }

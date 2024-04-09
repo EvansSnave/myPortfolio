@@ -25,6 +25,9 @@
   @include tablet-size {
     font-size: 2.5vw;
   }
+  @include phone-size {
+    font-size: 5vw;
+  }
 }
 
 img {
@@ -38,6 +41,9 @@ h1 {
   @include tablet-size {
     font-size: 5vw;
   }
+  @include phone-size {
+    font-size: 9vw;
+  }
 }
 
 h2 {
@@ -45,6 +51,9 @@ h2 {
   font-size: 1.3vw;
   @include tablet-size {
     font-size: 4vw;
+  }
+  @include phone-size {
+    font-size: 7vw;
   }
 }
 
@@ -57,5 +66,8 @@ a {
   font-size: 1.2vw;
   @include tablet-size {
     font-size: 2.5vw;
+  }
+  @include phone-size {
+    font-size: 5.3vw;
   }
 }

@@ -1,7 +1,7 @@
 @import '../../../../assets/styles/responsive';
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 15vw;
   display: flex;
   justify-content: center;
@@ -10,14 +10,24 @@ section {
   @include tablet-size {
     gap: 5vw;
   }
+  @include phone-size {
+    flex-direction: column;
+    padding: 10vw 15vw;
+  }
 }
 
 div {
   width: 35vw;
+  @include phone-size {
+    width: 100%;
+  }
 }
 
 .up {
   margin-bottom: 10vw;
+  @include phone-size {
+    margin: 0;
+  }
 }
 
 .tech {
@@ -46,6 +56,9 @@ p {
 
 .down {
   margin-top: 10vw;
+  @include phone-size {
+    margin: 0;
+  }
 }
 
 @keyframes fade-in {

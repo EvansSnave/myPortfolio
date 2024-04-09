@@ -59,11 +59,15 @@ a {
 
 .burger {
   display: none;
-  width: 8vw;
-  height: 8vw;
+  width: 5vw;
+  height: 5vw;
   position: fixed;
   margin: 3vw;
   @include tablet-size {
     display: block;
+  }
+  @include phone-size {
+    width: 8vw;
+    height: 8vw;
   }
 }
