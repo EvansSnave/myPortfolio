@@ -3,8 +3,16 @@
 
 button {
   position: relative;
-  width: 40vw;
-  height: 25vw;
+  width: 33vw;
+  height: 40vw;
+  @include tablet-size {
+    width: 53vw;
+    height: 60vw;
+  }
+  @include phone-size {
+    width: 73vw;
+    height: 80vw;
+  }
 }
 
 section {
