@@ -17,7 +17,7 @@
     My website where you can see what I can do!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://kevincruz.onrender.com/">View Demo</a>
     ·
     <a href="https://github.com/EvansSnave/myPortfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -123,16 +123,16 @@ To get a local copy up and running follow these simple example steps.
 
 You can read my working experience
 
-[![Porfolio screenshot-1][product-screenshot-1]](https://example.com)
+[![Porfolio screenshot-1][product-screenshot-1]](https://kevincruz.onrender.com/)
 
 You can easily send me an email throug my portfolio using this simple form! You just need to type your name, email and the message and I'll recieve a notification in my email inmediately. Don't worry, it's a completely safe form.
 
-[![Porfolio screenshot-2][product-screenshot-2]](https://example.com)
+[![Porfolio screenshot-2][product-screenshot-2]](https://kevincruz.onrender.com/)
 
 This website can be seen from any device due to its responsive design
 
-[![Porfolio screenshot-3][product-screenshot-3]](https://example.com)
-[![Porfolio screenshot-4][product-screenshot-4]](https://example.com)
+[![Porfolio screenshot-3][product-screenshot-3]](https://kevincruz.onrender.com/)
+[![Porfolio screenshot-4][product-screenshot-4]](https://kevincruz.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
