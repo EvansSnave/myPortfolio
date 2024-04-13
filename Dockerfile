@@ -1,13 +1,23 @@
-FROM node:alpine
+# Stage 1: Build Angular app
+FROM node:alpine as builder
 
 WORKDIR /app
 
-COPY . /app
-
-RUN npm install -g @angular/cli
+COPY package*.json ./
 
 RUN npm install
 
-EXPOSE 4200
+COPY . .
 
-CMD ng serve --host 0.0.0.0 --port 4200
+RUN npm run build
+
+# Stage 2: Serve Angular app
+FROM nginx:alpine
+
+# COPY default.conf /ect/nginx/conf.d
+
+COPY --from=builder /app/dist/my-portfolio/browser /usr/share/nginx/html
+
+EXPOSE 80
+
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
