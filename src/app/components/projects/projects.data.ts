@@ -2,6 +2,84 @@ import { Projects } from "./projects";
 
 export const PROJECTS: Projects[] = [
   {
+    shortcut: '../../../assets/images/projects/budget/0.png',
+    title: 'MyBudget',
+    images: [
+      '../../../assets/images/projects/budget/1.png', 
+      '../../../assets/images/projects/budget/2.png', 
+    ],
+    description: `
+      In this application built with React users can log in and log out using a Rails back end. There 
+      are form validations to ensure data integrity in the PostgreSQL database. Here you can create a new 
+      category for transactions selecting an icon and a name. Once the category is created you can click 
+      in and there you can see all its transactions and the total amount of money spent. You can easily add 
+      new transaction by clicking the 'Add transaction' button. You can specify the transaction information
+      and it will be inmediately added to the total budget. 
+    `,
+    repositoryLink: 'https://github.com/EvansSnave/Budget_App',
+    instructions: `
+      To see this project:<br>
+      1) In a command line go to your desire folder location<br>
+      2) Type the command: git clone https://github.com/EvansSnave/Budget_App.git<br>
+      3) Go to the folder in the command line and run npm install<br>
+      4) Run npm start<br>
+    `,
+    activeLink: ''
+  },
+  {
+    shortcut: '../../../assets/images/projects/pollution/2.png',
+    title: 'Pollution metrics',
+    images: [
+      '../../../assets/images/projects/pollution/0.png', 
+      '../../../assets/images/projects/pollution/1.png', 
+    ],
+    description: `
+      This is a frontend website where users can see pollution information for several countries in europe. 
+      Users will see a list of countries with some minor details such as the name od the country, its geographical 
+      location and the abbreviation for its name. Above the countries list there is a search bar which can be used to filter 
+      the list by country name. When a user click on any country they will be redirected to the details page. There all 
+      relevant pollution data can be found. This project was built using React.
+    `,
+    repositoryLink: 'https://github.com/EvansSnave/react-air-pollution?tab=readme-ov-file',
+    instructions: `
+      To see this project:<br>
+      1) In a command line go to your desire folder location<br>
+      2) Type the command: git clone https://github.com/EvansSnave/react-air-pollution.git<br>
+      3) Go to the folder in the command line and run npm install<br>
+      4) Run npm start<br>
+    `,
+    activeLink: 'https://evanssnave.github.io/react-air-pollution/'
+  },
+  {
+    shortcut: '../../../assets/images/projects/spaceTraveler/6.png',
+    title: 'Space traveler',
+    images: [
+      '../../../assets/images/projects/spaceTraveler/0.png', 
+      '../../../assets/images/projects/spaceTraveler/1.png', 
+      '../../../assets/images/projects/spaceTraveler/2.png', 
+      '../../../assets/images/projects/spaceTraveler/3.png', 
+      '../../../assets/images/projects/spaceTraveler/4.png', 
+      '../../../assets/images/projects/spaceTraveler/5.png', 
+    ],
+    description: `
+    This is a project where users can see information about space ships and rockets. They can reserve 
+    ships and join in missions just by clicking a button. It has a friendly user interface built with 
+    Bootstrap. This project was made with React in a team of three people where we could learn a lot 
+    about collaboration. I learned how to effectively use pull requests and commits to keep track of what 
+    was happening and how we were progressing with the project. We sticked to the provided desing 
+    thoroughly.
+    `,
+    repositoryLink: 'https://github.com/gdvl777/space_traveler',
+    instructions: `
+      To see this project:<br>
+      1) In a command line go to your desire folder location<br>
+      2) Type the command: git clone https://github.com/gdvl777/space_traveler.git<br>
+      3) Go to the folder in the command line and run npm install<br>
+      4) Run npm start<br>
+    `,
+    activeLink: ''
+  },
+  {
     shortcut: '../../../assets/images/projects/books/12.png',
     title: 'Boooks!',
     images: [
