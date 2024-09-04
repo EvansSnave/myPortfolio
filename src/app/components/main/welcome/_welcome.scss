@@ -47,21 +47,21 @@ main {
 
 .image {
   position: absolute;
-  width: 20vw;
+  width: 19vw;
   height: 25vw;
   right: 25vw;
   z-index: 80;
   @include tablet-size {
     left: 38vw;
-    top: 16vw;
-    height: 25vw;
-    width: 25vw;
+    top: 10vw;
+    height: 30vw;
+    width: 24vw;
   }
   @include phone-size {
-    height: 45vw;
+    height: 55vw;
     width: 45vw;
     left: 28vw;
-    top: 23vw;
+    top: 20vw;
   }
 }
 
