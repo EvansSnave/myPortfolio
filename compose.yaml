@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    image: portfolio:1.1
+    image: portfolio
     ports:
       - 80:80
     expose:
