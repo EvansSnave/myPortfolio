@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    image: portfolio
+    image: evanssnave/portfolio
     ports:
       - 80:80
     expose:
