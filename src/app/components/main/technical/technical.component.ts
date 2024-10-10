@@ -15,7 +15,7 @@ export class TechnicalComponent implements OnInit {
   }
 
   toProject():void {
-    this.router.navigate(['/project/0']);
+    this.router.navigate(['/project/4']);
   }
 
   scrollToFooter():void {
