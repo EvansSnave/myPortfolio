@@ -124,5 +124,14 @@ export const PROJECTS: Projects[] = [
       9) Finally run rails s
     `,
     activeLink: ''
+  },
+  {
+    shortcut: '../../../assets/images/projects/leagueGenius/0.png',
+    title: '',
+    images: [],
+    description: ``,
+    repositoryLink: '',
+    instructions: '',
+    activeLink: ''
   }
 ];
