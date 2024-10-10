@@ -127,11 +127,46 @@ export const PROJECTS: Projects[] = [
   },
   {
     shortcut: '../../../assets/images/projects/leagueGenius/0.png',
-    title: '',
-    images: [],
-    description: ``,
+    title: 'League Genius',
+    images: [
+      '../../../assets/images/projects/leagueGenius/1.png',
+      '../../../assets/images/projects/leagueGenius/2.png',
+      '../../../assets/images/projects/leagueGenius/3.png',
+      '../../../assets/images/projects/leagueGenius/4.png',
+      '../../../assets/images/projects/leagueGenius/5.png',
+      '../../../assets/images/projects/leagueGenius/6.png',
+      '../../../assets/images/projects/leagueGenius/7.png',
+      '../../../assets/images/projects/leagueGenius/8.png',
+      '../../../assets/images/projects/leagueGenius/9.png',
+      '../../../assets/images/projects/leagueGenius/10.png',
+      '../../../assets/images/projects/leagueGenius/11.png',
+      '../../../assets/images/projects/leagueGenius/12.png',
+      '../../../assets/images/projects/leagueGenius/13.png',
+      '../../../assets/images/projects/leagueGenius/14.png',
+      '../../../assets/images/projects/leagueGenius/15.png',
+      '../../../assets/images/projects/leagueGenius/16.png',
+      '../../../assets/images/projects/leagueGenius/17.png',
+      '../../../assets/images/projects/leagueGenius/18.png',
+      '../../../assets/images/projects/leagueGenius/19.png',
+      '../../../assets/images/projects/leagueGenius/20.png',
+      '../../../assets/images/projects/leagueGenius/21.png',
+      '../../../assets/images/projects/leagueGenius/22.png',
+      '../../../assets/images/projects/leagueGenius/23.png',
+    ],
+    description: `
+      This is probably my biggest and most complex project so far. While working at League Genius I designed the company's website. In the League Genius website, users
+      can see, edit and create events and those will be listed as closed, upcoming or open events depending on the date. Users can register teams and players into 
+      tournaments of different types. They can check and create event schedules, create and send messages to contacts, see messages history, see the current live 
+      scores for all tournaments and a leaderboard where they can see all teams performance. It counts with a payments system, user accounts, login, logout, authentication 
+      and authorization.
+      I designed all the pages shown in the images above. I was given figma guidelines and my boss instructed me on what functionalities I had to design. We had meetings 
+      in google chat where I had to show what I had done and how it worked. I changed and tweak whatever my boss asked and always delivered my pull requests on time. If for 
+      some reason I was delayed I always communicate it in time. I also had to take some decisions on the style and design of some pages, for example the color or shape of a 
+      button or modal.
+      Every two or three days my boss would open a new issue in the project's repository where I could find the deadline and details. 
+    `,
     repositoryLink: '',
-    instructions: '',
-    activeLink: ''
+    instructions: 'This is a private repository',
+    activeLink: 'https://league-genius-img-eownl24f5a-uc.a.run.app/'
   }
 ];

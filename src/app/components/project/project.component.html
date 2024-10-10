@@ -24,7 +24,13 @@
   <article>
     <div [innerHTML]="project.description" class="description"></div>
     <div [innerHTML]="project.instructions"></div>
-    <p>GitHub repository <a [href]="project.repositoryLink" target="_blank">here</a></p>
+    <p>GitHub repository 
+      @if (project.repositoryLink != '') {
+        <a [href]="project.repositoryLink" target="_blank">here</a>
+      } @else {
+        PRIVATE
+      }
+    </p>
     <p>Active link 
       @if (project.activeLink != '') {
         <a [href]="project.activeLink" target="_blank">here</a>
