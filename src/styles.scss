@@ -1,7 +1,4 @@
-@import './assets/styles/fonts';
-@import './assets/styles/responsive';
-@import './assets/styles/colors';
-
+@import 'fonts', "responsive", "colors", "sizes";
 * {
   margin: 0;
   padding: 0;
@@ -13,20 +10,13 @@
   box-sizing: border-box;
   border-radius: 0;
   background-color: transparent;
-  font-size: 1vw;
-  color: $forth-color;
+  color: black;
   // outline: 1px solid red;
   font-family: 'Main','sans-serif';
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }
-  @include tablet-size {
-    font-size: 2.5vw;
-  }
-  @include phone-size {
-    font-size: 4vw;
   }
 }
 
@@ -63,4 +53,5 @@ html {
 
 a {
   font-family: 'sans-serif', 'SubTitles';
+  font-size: var(--secondary-f-size);
 }

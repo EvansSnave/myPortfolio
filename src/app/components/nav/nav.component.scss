@@ -45,7 +45,6 @@ nav {
 .cont {
   display: flex;
   gap: 0.5vw;
-  font-size: var(--secondary-f-size);
   @include tablet-size {
     flex-direction: column;
     gap: 3vw;
