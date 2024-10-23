@@ -30,21 +30,6 @@ main {
   }
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-  width: 35vw;
-  background-color: $third-color;
-  height: 100%;
-  @include tablet-size {
-    width: 100%;
-    height: 35vw;
-  }
-  @include phone-size {
-    height: 55vw;
-  }
-}
-
 .image {
   position: absolute;
   width: 19vw;
