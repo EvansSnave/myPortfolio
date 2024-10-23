@@ -63,11 +63,4 @@ html {
 
 a {
   font-family: 'sans-serif', 'SubTitles';
-  font-size: 1.2vw;
-  @include tablet-size {
-    font-size: 2.5vw;
-  }
-  @include phone-size {
-    font-size: 5.3vw;
-  }
 }
