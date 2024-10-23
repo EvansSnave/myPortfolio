@@ -1,20 +1,6 @@
 @import '../assets/styles/colors';
 @import '../assets/styles/responsive';
 
-.overlay {
-  position: fixed;
-  width: 100vw;
-  background-color: $first-color;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: $forth-color;
-  z-index: 200;
-  animation: on-load 0.5s ease-in forwards 0.3s;
-}
-
 .side {
   width: 30%;
   height: 100%;
@@ -34,10 +20,4 @@ button {
   width: 10vw;
   height: 10vw;
   margin-bottom: 30vh;
-}
-
-@keyframes on-load {
-  to {
-    transform: translateY(-100vh);
-  }
 }
