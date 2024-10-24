@@ -27,7 +27,8 @@ img {
 
 h1 {
   font-family: 'Titles', 'sans-serif';
-  font-size: 3vw;
+  font-size: 2.25rem;
+  font-weight: 100;
   margin-bottom: 1vw;
   @include tablet-size {
     font-size: 5vw;
@@ -38,8 +39,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'SubTitles', 'sans-serif';
-  font-size: 1.3vw;
+  font-family: 'Titles', 'sans-serif';
+  font-weight: 100;
+  font-size: var(--third-f-size);
   @include tablet-size {
     font-size: 4vw;
   }

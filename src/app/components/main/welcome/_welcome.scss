@@ -1,6 +1,7 @@
 main {
   display: flex;
   height: 35vw;
+  padding: 0 11vw;
   align-items: center;
   @include tablet-size {
     height: 80vw;
@@ -27,26 +28,6 @@ main {
   }
   @include phone-size {
     height: 100vw;
-  }
-}
-
-.image {
-  position: absolute;
-  width: 19vw;
-  height: 25vw;
-  right: 25vw;
-  z-index: 80;
-  @include tablet-size {
-    left: 38vw;
-    top: 10vw;
-    height: 30vw;
-    width: 24vw;
-  }
-  @include phone-size {
-    height: 55vw;
-    width: 45vw;
-    left: 28vw;
-    top: 20vw;
   }
 }
 
@@ -78,50 +59,20 @@ h2 {
 }
 
 .full-stack {
-  overflow: hidden;
   border-right: 0.15em solid $forth-color;
-  white-space: nowrap;
   margin: 0 auto;
-  animation: type 4s steps(25, end) alternate infinite, blink 0.75s step-end infinite;
   border-color: transparent;
   @include phone-size {
     font-size: 130%;
   }
 }
 
-@keyframes type {
-  0% { width: 0; }
-  20% { width: 0; }
-  50% { width: 100%; }
-  100% { width: 100%; }
-}
-
-@keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: $forth-color; }
-}
-
 .messages > p {
-  animation: fade-in 0.8s forwards ease-in 0.5s;
   position: relative;
-  opacity: 0;
   top: 5vw;
 }
 
 h2 {
-  animation: fade-in 0.5s forwards ease-in 0.5s;
   position: relative;
-  opacity: 0;
   top: 5vw;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;   
-    transform: translateY(-5vw);
-  }
 }

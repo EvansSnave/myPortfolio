@@ -11,6 +11,13 @@ section {
   }
 }
 
+.image {
+  width: 100px;
+  height: 100px;
+  z-index: 80;
+  position: relative;
+}
+
 .cont {
   width: 100%;
   height: 100%;
